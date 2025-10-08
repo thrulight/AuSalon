@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+* {
+    box-sizing: border-box;
+}
+
+.column  {
+    float: left;
+}
+
+.menuContainer .column  {
+    width: 33%;
+    border: 1px solid black;
+    height: 20vh;
+}
+
+.menuContainer {
+    height: 40vh;
+}
+
+.mainContainer {
+    height: 55vh;
+}
+

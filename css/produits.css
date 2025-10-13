@@ -2,4 +2,5 @@ body {
     background-image: url("../images/product_background.svg");
     background-size: cover; /* Ensures the image covers the entire div */
 background-position: center; /* Centers the image */
+    color: var(--beige);
 }

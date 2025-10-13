@@ -1,6 +1,6 @@
  body {
     margin: 0;
-    background-color: #FFEFD6;
+    background-color: var(--beige);
  }
 
  .introContainer {
@@ -12,6 +12,6 @@ background-position: center; /* Centers the image */
  }
 
 .attenteContainer, .venteContainer {
-   background-color: #5D713E;
-   color: #FFEFD6;
+   background-color: var(--green);
+   color: var(--beige);
 }

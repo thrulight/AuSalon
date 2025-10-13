@@ -1,5 +1,6 @@
-html, body {
+body {
     margin: 0;
+    background-color: black;
 }
 
 .row:after {
@@ -17,7 +18,7 @@ html, body {
 }
 
 .menuContainer .column  {
-    width: 33%;
+    width: 33.33%;
     border: 1px solid black;
     height: 20vh;
 }
@@ -27,11 +28,43 @@ html, body {
 }
 
 .mainContainer {
-    height: 55vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    position: relative;
+    color: var(--beige);
+}
+
+/* Video */
+#myVideo {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  align-self: center;
+  filter: brightness(40%);
 }
 
 /* Prestations */
-
 .prestations {
-    background-color: #AA2C2E;
+    background-color: var(--red);
 }
+
+/* Events */
+.events {
+    background-color: var(--dkGreen);
+}
+
+/* History */
+.history {
+    background-color: var(--blue);
+}
+
+/* Portfolio */
+.portfolio {
+    background-color: var(--yellow);
+}
+

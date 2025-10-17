@@ -22,37 +22,41 @@
         <h3>Lorem ipsum dolor sit amet consectitur</h3>
 
         <div class="buttonContainer">
-            <button>Prendre rendez-vous</button>
-            <button>Me contacter</button>
+            <a href="" class="fullBtn">Prendre rendez-vous</a>
+            <a href="" class="outlineBtn">Me contacter</a>
         </div>
     </div>
 
     <div class="menuContainer">
         <div class="row">
-            <div class="column left prestations">
-                <a href="portfolio.html">Les prestations</a>
+            <div class="column left prestations" onclick="window.location.href='prestations.html'">
+                <h3>Les prestations</h3>
+                <img src="images/arrow-curb.svg" class="arrowCurb" alt="">
             </div>
 
-            <div class="column middle auSalon">
-                <a href="ausalon.html">Au Salon</a>
+            <div class="column middle auSalon" onclick="window.location.href='ausalon.html'">
+                <img src="images/ausalon_logo.png" class="logo" alt="">
+                <img src="images/arrow.svg" class="arrow" alt="">
             </div>
 
-            <div class="column right events">
-                <a href="events.html">Les événements</a>
+            <div class="column right events" onclick="window.location.href='events.html'">
+                <h3>Les événements</h3>
             </div>
         </div>
 
         <div class="row">
-            <div class="column left products">
-                <a href="produits.html">Les produits</a>
+            <div class="column left products" onclick="window.location.href='produits.html'">
+                <div class="productContainer">
+                    <h3>Les produits</h3>
+                </div>
             </div>
 
-            <div class="column middle history">
-                L'histoire
+            <div class="column middle history" onclick="window.location.href='histoire.html'">
+                <h3>L'histoire</h3>
             </div>
 
-            <div class="column right portfolio">
-                <a href="portfolio.html">Portfolio</a>
+            <div class="column right portfolio" onclick="window.location.href='portfolio.html'">
+                <h3>Portfolio</h3>
             </div>
         </div>
     </div>

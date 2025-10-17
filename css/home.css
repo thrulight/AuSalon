@@ -19,8 +19,12 @@ body {
 
 .menuContainer .column  {
     width: 33.33%;
-    border: 1px solid black;
     height: 20vh;
+    cursor: pointer;
+}
+
+.menuContainer .column:hover {
+    filter: brightness(0.9);
 }
 
 .menuContainer {
@@ -28,6 +32,7 @@ body {
 }
 
 .mainContainer {
+    padding: 100px;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -36,6 +41,25 @@ body {
     overflow: hidden;
     position: relative;
     color: var(--beige);
+}
+
+.mainContainer h1 {
+    margin: 0;
+    font-family:'Titan One', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.mainContainer h3 {
+    font-size: 1.125rem;
+    margin-top: 16px;
+    font-weight: 400;
+}
+
+.mainContainer .buttonContainer {
+    display: flex;
+    margin-top: 64px;
+    gap: 8px;
 }
 
 /* Video */
@@ -51,20 +75,123 @@ body {
 /* Prestations */
 .prestations {
     background-color: var(--red);
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.prestations h3 {
+    margin: 0;
+    color: var(--beige);
+    font-family:'Source Pro 4', 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.prestations .arrowCurb {
+    align-self: end;
+    max-width: 20%;
+    height: 100%;
+}
+
+/* Au Salon */
+.auSalon {
+    background-color: var(--beige);
+    background-image: url(../images/green-stripes.png);
+    background-size: 150%;
+    background-position: center; /* Centers the image */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.auSalon .logo {
+    max-width: 100%;
+    max-height: 90%;
+}
+
+.auSalon .arrow {
+    align-self: end;
+    height: 30%;
 }
 
 /* Events */
 .events {
     background-color: var(--dkGreen);
+    display: flex;
+    align-items: end;
+    padding: 24px;
+}
+
+.events h3 {
+    margin: 0;
+    color: var(--beige);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+/* Products */
+.products {
+    background-image: url(../images/product_background.svg);
+    background-size: 200%;
+    background-position: center; /* Centers the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.productContainer {
+    display: flex;
+    padding: 12px 24px;
+    border-radius: 16px;
+    border: solid 2px var(--beige);
+    background-color: #7A8E5B;
+}
+
+.products h3 {
+    margin: 0;
+    color: var(--beige);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
 }
 
 /* History */
 .history {
     background-color: var(--blue);
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.history h3 {
+    margin: 0;
+    color: var(--beige);
+    font-family:'Titan One', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    text-decoration: underline solid 7px;
 }
 
 /* Portfolio */
 .portfolio {
     background-color: var(--yellow);
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    padding: 24px;
 }
+
+.portfolio h3 {
+    margin: 0;
+    color: var(--beige);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+}
+
+
+
 

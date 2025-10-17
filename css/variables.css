@@ -36,3 +36,11 @@ h3 {
   border-radius: 4px;
   border: solid 1px var(--beige);
 }
+
+.backBtn {
+  display: flex;
+  gap: 16px;
+  font-size: 1.125rem;
+  font-weight: 300;
+  cursor: pointer;
+}

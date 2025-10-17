@@ -1,17 +1,117 @@
- body {
-    margin: 0;
-    background-color: var(--beige);
- }
+body {
+   margin: 0;
+   background-color: var(--beige);
+}
 
- .introContainer {
-    height: 70vh;
-    border: 1px solid black;
-    background-image: url(../images/green-stripes.png);
-    background-size: cover; /* Ensures the image covers the entire div */
-background-position: center; /* Centers the image */
- }
+.introContainer {
+   height: 70vh;
+   border: 1px solid black;
+   background-image: url(../images/green-stripes.png);
+   background-size: cover; /* Ensures the image covers the entire div */
+   background-position: center; /* Centers the image */
+   padding: 32px;
+}
+
+.introContainer .backBtn {
+   position: absolute;
+   color: var(--dkGreen);
+}
+
+.centerContainer {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.centerContainer p {
+   text-align: center;
+   width: 30rem;
+   font-size: 1rem;
+}
+
+.centerContainer img {
+   width: fit-content;
+   max-height: 100%;
+   margin-bottom: 48px;
+}
+
+.valueContainer {
+   display: flex;
+   flex-direction: column;
+   padding: 0 100px;
+}
+
+.valueContainer .txtSummary {
+   display: flex;
+   flex-direction: column;
+}
+
+details {
+   background-color: var(--green);
+   padding: 0.75rem;
+   color: var(--beige);
+   border-radius: 16px;
+   padding: 2rem;
+  
+	&[open] summary::after {
+		rotate: -180deg;
+	}
+}
+
+details h2 {
+   margin: 0;
+}
+
+details[open] summary {
+  border-bottom: 1px solid var(--beige);
+  margin-bottom: 0.5em;
+}
+
+summary {
+   /* Override default "display: list-item" and position the summary text as well as the custom arrow icon */
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   gap: 1rem;
+
+   /* General styling */
+   background-color: var(--green);
+   cursor: pointer;
+   font-weight: 500;
+   
+   /* Fallback code to hide standard marker, especially on Safari */
+   &::marker,
+   &::-webkit-details-marker {
+      display: none;
+   }
+    
+   &::after {
+   /* CSS for chevron shape from https://css-shape.com/chevron/ */
+   --shape-chevron-width: 1rem;
+   --s: calc(var(--shape-chevron-width) / 4);
+
+   /* Styling */
+   content: "";
+   aspect-ratio: 7/5;
+   background: currentColor;
+   clip-path: polygon(0 0, 0 var(--s), 50% 100%, 100% var(--s), 100% 0, 50% calc(100% - var(--s)));
+   flex-shrink: 0;
+   width: var(--shape-chevron-width);
+   
+   /* Animation */
+   rotate: 0deg;
+   transition: rotate 0.35s ease;
+   }
+
+}
+
+
+
 
 .attenteContainer, .venteContainer {
-   background-color: var(--green);
-   color: var(--beige);
+background-color: var(--green);
+color: var(--beige);
 }

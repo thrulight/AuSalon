@@ -160,6 +160,19 @@ summary {
    font-size: 1.25rem;
 }
 
+/* Barbier */
+.barbierContainer .left {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.barbierContainer .right {
+   padding-left: 32px;
+}
+
+.barbierContainer {color: var(--dkGreen);}
+
 /* All */
 
 .attenteContainer .right, .venteContainer .right {
@@ -172,15 +185,7 @@ summary {
    padding-right: 32px;
 }
 
-.barbierContainer .left {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
 
-.barbierContainer .right {
-   padding-left: 32px;
-}
 
 .attenteContainer, .barbierContainer, .venteContainer {
    padding: 150px 100px;

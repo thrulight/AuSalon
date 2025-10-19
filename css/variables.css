@@ -7,19 +7,56 @@
   --yellow: #E29527;
 }
 
+@font-face {
+  font-family: Montserrat; /* set name */
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf); /* url of the font */
+}
+
+@font-face {
+  font-family: Montserrat Italic; /* set name */
+  src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf); /* url of the font */
+}
+
+@font-face {
+  font-family: Titan One; /* set name */
+  src: url(../fonts/Titan_One/TitanOne-Regular.ttf); /* url of the font */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column  {
+    float: left;
+}
+
 p {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+li {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 h3 {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
 .fullBtn {
   background-color: var(--green);
-  color: #FFEFD6;
+  color: var(--beige);
   padding: 12px 16px;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
   text-decoration: none;
   border-radius: 4px;
@@ -27,10 +64,9 @@ h3 {
 }
 
 .outlineBtn {
-  background-color: none;
-  color: #FFEFD6;
+  color: var(--beige);
   padding: 12px 16px;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 1.125rem;
   text-decoration: none;
   border-radius: 4px;

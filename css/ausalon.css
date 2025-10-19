@@ -3,8 +3,10 @@ body {
    background-color: var(--beige);
 }
 
+/* Intro Container */
+
 .introContainer {
-   height: 70vh;
+   height: 80vh;
    border: 1px solid black;
    background-image: url(../images/green-stripes.png);
    background-size: cover; /* Ensures the image covers the entire div */
@@ -34,14 +36,19 @@ body {
 
 .centerContainer img {
    width: fit-content;
-   max-height: 100%;
+   max-height: 40%;
    margin-bottom: 48px;
 }
+
+/* Value Container */
 
 .valueContainer {
    display: flex;
    flex-direction: column;
-   padding: 0 100px;
+   padding: 0 100px 64px 100px;
+   position: relative;
+   top: -48px;
+   gap: 24px;
 }
 
 .valueContainer .txtSummary {
@@ -63,6 +70,8 @@ details {
 
 details h2 {
    margin: 0;
+   font-family: Titan One;
+   font-weight: 400;
 }
 
 details[open] summary {
@@ -108,10 +117,93 @@ summary {
 
 }
 
+/* Encounter */
 
+.encounterContainer {
+   padding: 0 100px 150px 100px;
+   color: var(--dkGreen);
+   display: flex;
+}
 
+.encounterContainer img {
+   max-height: 500px;
+   max-width: 80%;
+   rotate: 3deg;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.encounterContainer .left {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.encounterContainer .buttonContainer {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+}
+
+.encounterContainer .outlineBtn {
+  color: var(--dkGreen);
+  border: solid 1px var(--dkGreen);
+}
+
+.encounterContainer h2 {
+   font-family: Montserrat;
+   font-size: 1.25rem;
+}
+
+/* All */
+
+.attenteContainer .right, .venteContainer .right {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.attenteContainer .left, .venteContainer .left {
+   padding-right: 32px;
+}
+
+.barbierContainer .left {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.barbierContainer .right {
+   padding-left: 32px;
+}
+
+.attenteContainer, .barbierContainer, .venteContainer {
+   padding: 150px 100px;
+   display: flex;
+}
+
+.encounterContainer .column, .attenteContainer .column, .barbierContainer .column, .venteContainer .column  {
+    width: 50%;
+}
+
+.encounterContainer h1, .attenteContainer h1, .venteContainer h1, .barbierContainer h1 {
+   font-family: Titan One;
+   font-weight: 400;
+}
 
 .attenteContainer, .venteContainer {
 background-color: var(--green);
 color: var(--beige);
+}
+
+.attenteContainer .fullBtn, .venteContainer .fullBtn {
+  background-color: var(--beige);
+  color: var(--dkGreen);
+}
+
+.attenteContainer p, .venteContainer p {
+   margin-bottom: 32px;
+}
+
+.attenteContainer img, .barbierContainer img, .venteContainer img {
+   max-width: 90%;
 }

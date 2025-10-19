@@ -7,7 +7,6 @@ body {
 
 .introContainer {
    height: 80vh;
-   border: 1px solid black;
    background-image: url(../images/green-stripes.png);
    background-size: cover; /* Ensures the image covers the entire div */
    background-position: center; /* Centers the image */
@@ -54,14 +53,14 @@ body {
 .valueContainer .txtSummary {
    display: flex;
    flex-direction: column;
+   width: 100%;
 }
 
 details {
    background-color: var(--green);
-   padding: 0.75rem;
    color: var(--beige);
    border-radius: 16px;
-   padding: 2rem;
+   padding: 2rem 2rem 2rem 11rem;;
   
 	&[open] summary::after {
 		rotate: -180deg;
@@ -74,15 +73,22 @@ details h2 {
    font-weight: 400;
 }
 
+details img {
+   position: absolute;
+   left: 64px;
+   height: 200px;
+   rotate: -20deg;
+}
+
 details[open] summary {
   border-bottom: 1px solid var(--beige);
-  margin-bottom: 0.5em;
+  margin-bottom: 2em;
 }
 
 summary {
    /* Override default "display: list-item" and position the summary text as well as the custom arrow icon */
    display: flex;
-   align-items: flex-start;
+   align-items: center;
    justify-content: space-between;
    gap: 1rem;
 
@@ -200,7 +206,7 @@ color: var(--beige);
   color: var(--dkGreen);
 }
 
-.attenteContainer p, .venteContainer p {
+.attenteContainer p, .venteContainer p, .barbierContainer p {
    margin-bottom: 32px;
 }
 

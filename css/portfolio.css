@@ -1,7 +1,20 @@
 body {
-    background-color: #E29527;
+    background-color: var(--yellow);
     color: #ffffff;
     margin: 96px 64px;
+}
+
+.backBtn img {
+    filter: invert(100%);
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    letter-spacing: -1px;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
 }
 
 .elfsight-app-a365f1da-d40c-46d0-8baa-2795e6c0d3ad a {

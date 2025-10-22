@@ -103,7 +103,7 @@ body {
     background-size: 150%;
     background-position: center; /* Centers the image */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 24px;
 }
@@ -111,6 +111,9 @@ body {
 .auSalon .logo {
     max-width: 100%;
     max-height: 90%;
+    height: 7rem;
+    position: absolute;
+    justify-self: anchor-center;
 }
 
 .auSalon .arrow {
@@ -150,9 +153,11 @@ body {
 .productContainer {
     display: flex;
     padding: 12px 24px;
-    border-radius: 16px;
-    border: solid 2px var(--beige);
+    border-radius: 24px;
+    border: solid 3px var(--beige);
     background-color: var(--green);
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .products h3 {
@@ -161,6 +166,11 @@ body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.75rem;
+}
+
+.products img {
+    position: fixed;
+    left: 22vw;
 }
 
 /* History */
@@ -203,6 +213,11 @@ body {
     font-weight: 500;
 }
 
+/* #region mobile version */
+@media screen and (max-width: 900px){
 
-
-
+.products img {
+    position: absolute;
+    left: 70vw;
+}
+}

@@ -85,6 +85,11 @@ details[open] summary {
   margin-bottom: 2em;
 }
 
+details summary {
+  cursor: pointer;
+  transition: margin .3s ease-out;
+}
+
 summary {
    /* Override default "display: list-item" and position the summary text as well as the custom arrow icon */
    display: flex;
@@ -121,6 +126,22 @@ summary {
    transition: rotate 0.35s ease;
    }
 
+}
+
+details {
+  interpolate-size: allow-keywords;
+  
+  &::details-content {
+    transition:
+      block-size .3s,
+      content-visibility 1s allow-discrete;
+    overflow: hidden;
+    block-size: 0;     /* Or also:  height:0; */
+  }
+  
+  &[open]::details-content {
+    block-size: auto;  /* Or also:  height:auto; */
+  }
 }
 
 /* Encounter */

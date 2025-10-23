@@ -49,12 +49,16 @@ h1 {
 .bigTxt {
     display: flex;
     text-align: center;
-    margin: 4rem;
+    margin: 8rem 0 4rem 0;
     justify-content: center;
 }
 
 .bigTxt h3 {
     max-width: 900px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    font-family: ;
 }
 
 /* Price Container */
@@ -62,7 +66,7 @@ h1 {
 .priceContainer {
     background-color: var(--red);
     color: var(--beige);
-    padding: 100px 100px;
+    padding: 150px 100px;
     display: flex;
     flex-direction: column;
 }
@@ -86,4 +90,25 @@ h1 {
     box-shadow: -4px 4px #75130F;
     margin-top: 2rem;
     width: fit-content;
+}
+
+/* Massage container */
+.massageContainer {
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--red);
+}
+
+.massageContainer .fullBtn {
+    background-color: var(--red);
+    color: var(--beige);
+    box-shadow: -4px 4px #75130F;
+}
+
+.massageContainer p {
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 2rem;
 }

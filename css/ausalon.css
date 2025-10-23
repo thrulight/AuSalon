@@ -194,6 +194,21 @@ details {
 
 .barbierContainer {color: var(--dkGreen);}
 
+/* Chair container */
+.chairContainer {
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dkGreen);
+}
+
+.chairContainer p {
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 /* All */
 
 .attenteContainer .right, .venteContainer .right {
@@ -206,8 +221,6 @@ details {
    padding-right: 32px;
 }
 
-
-
 .attenteContainer, .barbierContainer, .venteContainer {
    padding: 150px 100px;
    display: flex;
@@ -217,7 +230,7 @@ details {
     width: 50%;
 }
 
-.encounterContainer h1, .attenteContainer h1, .venteContainer h1, .barbierContainer h1 {
+.encounterContainer h1, .attenteContainer h1, .venteContainer h1, .barbierContainer h1, .chairContainer h1 {
    font-family: Titan One;
    font-weight: 400;
 }

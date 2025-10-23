@@ -216,8 +216,32 @@ body {
 /* #region mobile version */
 @media screen and (max-width: 900px){
 
+.mobileOverlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    padding: 2rem;
+
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--green);
+    color: var(--beige);
+}
+
+.mobileOverlay h1 {
+    font-family:'Titan One', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 .products img {
     position: absolute;
     left: 70vw;
 }
+
 }

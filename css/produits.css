@@ -1,6 +1,79 @@
 body {
-    background-image: url("../images/product_background.svg");
+    margin: 0;
+    background-image: url("../images/product_background_clear.svg");
     background-size: cover; /* Ensures the image covers the entire div */
 background-position: center; /* Centers the image */
+    background-color: #7A8E5B;
     color: var(--beige);
+}
+
+.backBtn {background-color: #7A8E5B;}
+
+.backBtn img {
+    filter: invert(100%);
+}
+
+.topContainer {
+    padding: 32px;
+    width: fit-content;
+}
+
+.introContainer {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.productContainer {
+    display: flex;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: solid 3px var(--beige);
+    background-color:  #7A8E5B;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.productContainer h2 {
+    margin: 0;
+    color: var(--beige);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.productContainer img {
+    position: absolute;
+    top: 200px;
+}
+
+.videoContainer {
+    padding: 24px 150px 100px 150px;
+    display: flex;
+    gap: 4rem 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    display: block;
+    background-color: var(--beige);
+    color: var(--dkGreen);
+}
+
+.videoContainerSmall {
+    background-color: black;
+    width: 350px;
+    height: 600px;
+}
+
+.product .txtContainer {
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.product .txtContainer p {
+    margin: 0;
 }

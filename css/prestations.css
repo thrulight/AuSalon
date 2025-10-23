@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: var(--beige);
+}
+
+h1 {
+    margin: 0;
+    font-family:'Source Serif 4', 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    letter-spacing: -2.5px;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    color: var(--red);
+}
+
+.topContainer {
+    margin: 150px 100px;
+    color: var(--red);
+}
+
+.introContainer {
+    display: flex;
+}
+
+.txtContainer {
+    max-width: 50vw;
+    margin: 0 5rem 5rem 0;
+}
+
+/* Image container */
+.imgContainer {
+    display: flex;
+    gap: 2%;
+}
+
+.imgContainer img {
+    width: 23.5%;
+}
+
+.imgContainer .below {
+    margin-top: 4rem;
+}
+
+.imgContainer .above {
+    margin-bottom: 4rem;
+}
+
+/* Big text */
+.bigTxt {
+    display: flex;
+    text-align: center;
+    margin: 4rem;
+    justify-content: center;
+}
+
+.bigTxt h3 {
+    max-width: 900px;
+}
+
+/* Price Container */
+
+.priceContainer {
+    background-color: var(--red);
+    color: var(--beige);
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.priceContainer h1 {
+    color: var(--beige);
+}
+
+.priceContainer .priceElement {
+    display: flex;
+    justify-content: space-between;
+}
+
+.priceContainer .priceElement p {
+    margin: .5rem 0;
+}
+
+.priceContainer .fullBtn {
+    background-color: var(--beige);
+    color: var(--red);
+    box-shadow: -4px 4px #75130F;
+    margin-top: 2rem;
+    width: fit-content;
+}

@@ -69,7 +69,7 @@ details {
 
 details h2 {
    margin: 0;
-   font-family: Titan One;
+   font-family:'Titan One', Arial, Helvetica, sans-serif;
    font-weight: 400;
 }
 
@@ -231,7 +231,7 @@ details {
 }
 
 .encounterContainer h1, .attenteContainer h1, .venteContainer h1, .barbierContainer h1, .chairContainer h1 {
-   font-family: Titan One;
+   font-family:'Titan One', Arial, Helvetica, sans-serif;
    font-weight: 400;
 }
 

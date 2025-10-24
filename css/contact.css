@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background-color: var(--beige);
+}
+
+.column {
+    width: 50%;
+}
+
+/* Contact container */
+.contactContainer {
+    padding: 100px 100px;
+    color: var(--dkGreen);
+}
+
+.contactContainer .left {
+    padding-right: 3rem;
+}
+
+.contactContainer h1 {
+    margin: 0;
+    font-family:'Titan One', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.contactContainer a {
+    text-decoration: none;
+    color: var(--green);
+    font-family:'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.contactContainer h3 {
+    margin: 0;
+}
+
+.contactContainer ul {
+    margin-bottom: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+/* Map Container */
+.mapContainer {
+    background-color: var(--green);
+    padding: 150px 100px;
+    display: flex;
+    color: var(--beige);
+}
+
+.mapContainer .column {
+    width: 50%;
+}
+
+.mapContainer img {
+    width: 100%;
+}
+
+.mapContainer h3 {
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.mapContainer h1 {
+    margin: 0;
+    font-family:'Titan One', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+}

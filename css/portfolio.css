@@ -1,11 +1,11 @@
 body {
     background-color: var(--yellow);
     color: #ffffff;
-    margin: 96px 64px;
+    margin: 150px 100px;
 }
 
 .backBtn img {
-    filter: invert(100%);
+    filter: invert(100%) brightness(150%);
 }
 
 h1 {

@@ -7,6 +7,7 @@
   --yellow: #E29527;
 }
 
+/* Fonts */
 @font-face {
   font-family: Montserrat; /* set name */
   src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf); /* url of the font */
@@ -30,6 +31,30 @@
 @font-face {
   font-family: 'Source Serif 4 Italic'; /* set name */
   src: url(../fonts/Source_Serif_4/SourceSerif4-Italic-VariableFont_opsz\,wght.ttf); /* url of the font */
+}
+
+/* Fade in animation */
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 0.8s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.fadeIn {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .row:after {

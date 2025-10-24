@@ -1,6 +1,7 @@
 body {
     background-color: var(--dkGreen);
     color: var(--beige);
+    margin: 0;
 }
 
 h1 {
@@ -13,7 +14,7 @@ h1 {
 }
 
 .backBtn img {
-    filter: invert(100%);
+    filter: invert(1) sepia(1);
 }
 
 .topContainer {
@@ -21,7 +22,7 @@ h1 {
 }
 
 .introContainer {
-    padding: 200px;
+    padding: 150px;
 }
 
 /* Map Container */

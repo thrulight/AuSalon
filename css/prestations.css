@@ -65,7 +65,7 @@ h1 {
 .priceContainer {
     background-color: var(--red);
     color: var(--beige);
-    padding: 150px 100px;
+    padding: 150px 200px;
     display: flex;
     flex-direction: column;
 }

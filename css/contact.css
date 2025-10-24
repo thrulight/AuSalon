@@ -68,3 +68,33 @@ body {
     font-weight: 400;
     font-size: 3rem;
 }
+
+.mapContainer .lignes *{
+    display: flex;
+}
+
+.mapContainer ul {
+    padding: 0;
+}
+
+.mapContainer li {
+    display: flex;
+    padding: 0;
+}
+
+.mapContainer .imgContainer img {
+    width: 1.4rem;
+}
+
+.mapContainer .imgContainer {
+    margin-right: .5rem;
+}
+
+.mapContainer ul p {
+    margin: 0;
+    width: 110px;
+}
+
+.mapContainer a {
+    color: var(--beige);
+}

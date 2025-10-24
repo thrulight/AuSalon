@@ -70,8 +70,38 @@ h1 {
     flex-direction: column;
 }
 
+.priceContainer .titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
 .priceContainer h1 {
     color: var(--beige);
+    margin: 0;
+}
+
+.priceContainer p {
+    font-size: 1.25rem;
+}
+
+.priceContainer .priceDescription {
+    display: flex;
+    align-items: baseline;
+    gap: .75rem;
+}
+
+.priceContainer .sm {
+    font-size: 0.8rem;
+    opacity: .75;
+}
+
+.priceContainer .fullBtn {
+    background-color: var(--beige);
+    color: var(--red);
+    box-shadow: -4px 4px #75130F;
+    width: fit-content;
 }
 
 .priceContainer .priceElement {
@@ -83,12 +113,95 @@ h1 {
     margin: .5rem 0;
 }
 
-.priceContainer .fullBtn {
-    background-color: var(--beige);
-    color: var(--red);
-    box-shadow: -4px 4px #75130F;
-    margin-top: 2rem;
-    width: fit-content;
+.priceContainer ul {
+    padding: 0;
+    list-style: none;
+}
+
+/* Details */
+details {
+    margin-bottom: 1rem;
+    
+	&[open] summary::after {
+		rotate: -180deg;
+	}
+}
+
+details h2 {
+   margin: 1rem 0;
+   font-family: Montserrat, Arial, Helvetica, sans-serif;
+   font-weight: 500;
+   font-size: 1.75rem;
+}
+
+details img {
+   position: absolute;
+   left: 64px;
+   height: 200px;
+   rotate: -20deg;
+}
+
+details[open] summary {
+  margin-bottom: .5em;
+}
+
+details summary {
+    border-bottom: 1px solid var(--beige);
+    cursor: pointer;
+    transition: margin .3s ease-out;
+}
+
+summary {
+   /* Override default "display: list-item" and position the summary text as well as the custom arrow icon */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1rem;
+
+   /* General styling */
+   cursor: pointer;
+   font-weight: 500;
+   
+   /* Fallback code to hide standard marker, especially on Safari */
+   &::marker,
+   &::-webkit-details-marker {
+      display: none;
+   }
+    
+   &::after {
+   /* CSS for chevron shape from https://css-shape.com/chevron/ */
+   --shape-chevron-width: 1rem;
+   --s: calc(var(--shape-chevron-width) / 4);
+
+   /* Styling */
+   content: "";
+   aspect-ratio: 7/5;
+   background: currentColor;
+   clip-path: polygon(0 0, 0 var(--s), 50% 100%, 100% var(--s), 100% 0, 50% calc(100% - var(--s)));
+   flex-shrink: 0;
+   width: var(--shape-chevron-width);
+   
+   /* Animation */
+   rotate: 0deg;
+   transition: rotate 0.35s ease;
+   }
+
+}
+
+details {
+  interpolate-size: allow-keywords;
+  
+  &::details-content {
+    transition:
+      block-size .3s,
+      content-visibility 1s allow-discrete;
+    overflow: hidden;
+    block-size: 0;     /* Or also:  height:0; */
+  }
+  
+  &[open]::details-content {
+    block-size: auto;  /* Or also:  height:auto; */
+  }
 }
 
 /* Massage container */

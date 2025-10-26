@@ -98,6 +98,10 @@ h3 {
   box-shadow: -4px 4px #012B12;
 }
 
+.fullBtn:hover {
+  filter: brightness(0.9);
+}
+
 .outlineBtn {
   color: var(--beige);
   padding: 12px 16px;
@@ -108,6 +112,10 @@ h3 {
   border: solid 1px var(--beige);
 }
 
+.outlineBtn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .backBtn {
   display: flex;
   gap: 16px;
@@ -115,6 +123,72 @@ h3 {
   font-weight: 300;
   cursor: pointer;
 }
+
+.booksy-widget-button {
+  background-image: none !important;
+  background-color: var(--green);
+}
+
+.booksy-widget-container-dialog {
+  position: absolute;
+}
+
+.buttonContainer .fullBtn {
+  width: fit-content !important;
+}
+
+.booksy-business-link {
+  background-image: none !important;
+}
+
+.footer {
+  padding: 2rem 4rem;
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.footer .logo img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.footer .adresse {width: 100%;}
+
+.footer .adresse h2 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--beige);
+}
+
+.footer .adresse a {
+  text-decoration: none;
+}
+
+.footer .liens {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer .liens a {
+  text-decoration: none;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: var(--beige);
+}
+
+.footer a:hover {
+  text-decoration: underline solid var(--beige);
+}
+
+.footer .arrowContainer img {
+  height: 64px;
+  cursor: pointer;
+}
+
+
 
 /* #region mobile version */
 @media screen and (max-width: 900px){
@@ -131,5 +205,13 @@ h3 {
 .row {
   display: block;
 }
+
+.footer {
+  padding: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer .adresse h2 {text-align: center;}
 
 }

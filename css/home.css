@@ -37,7 +37,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     overflow: hidden;
     position: relative;
     color: var(--beige);
@@ -50,16 +49,14 @@ body {
     font-size: 3rem;
 }
 
-.mainContainer h3 {
-    font-size: 1.125rem;
-    margin-top: 16px;
-    font-weight: 400;
+.mainContainer p {
+    max-width: 800px;
 }
 
 .mainContainer .buttonContainer {
     display: flex;
-    margin-top: 64px;
     gap: 8px;
+    margin-top: 2rem;
 }
 
 /* Video */
@@ -70,6 +67,15 @@ body {
   z-index: -1;
   align-self: center;
   filter: brightness(40%);
+}
+
+.menuContainer #safeSpace {
+    position: absolute;
+    right: 4rem;
+    bottom: 35vh;
+    rotate: -20deg;
+    z-index: 1;
+    height: 200px;
 }
 
 /* Prestations */
@@ -243,5 +249,7 @@ body {
     position: absolute;
     left: 70vw;
 }
+
+.menuContainer {display: none;}
 
 }

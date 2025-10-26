@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="introContainer">
+    <div class="introContainer" id="topPage">
         <div class="backBtn" onclick="window.location.href='index.html'">
             <img src="images/long-arrow.svg" alt="">
             <p>Retour au menu</p>
@@ -252,6 +252,7 @@
                 Parfois, on philosophe sur la vie. Parfois, on reste juste dans le silence complice. À vous de voir.
                 <br><br>
                 <strong>Ce qui se passe ici :</strong>
+                </p>
                 <ul>
                     <li>Des coupes qui respectent votre identité</li>
                     <li>Des rasages qui frôlent l'art martial zen</li>
@@ -262,8 +263,11 @@
                     <i>Note importante : Ce qui se dit dans le fauteuil reste dans le fauteuil. On est comme un confessionnal, mais avec des
                 ciseaux.</i>
                 </p>
-            </p>
-            <a href="https://booksy.com/fr-fr/46412_au-salon-coiffeur-barbier_barbier_99219_paris" target="_blank" rel="noopener noreferrer" class="fullBtn">Prendre rendez-vous</a>
+            <!-- Intégration du widget Booksy -->
+            <div class="fullBtn">
+                <script type="text/javascript" src="https://booksy.com/widget/code.js?id=46412&country=fr&lang=fr"></script>
+                Prendre-rendez-vous
+            </div>
         </div>
     </div>
 
@@ -306,6 +310,32 @@
         <p>Tu souhaites travailler dans cet espace convivial ? 
         <br>Rempli ce formulaire pour faire une demande de location de fauteuil</p>
         <a href="https://form.typeform.com/to/FJDoWcdg" target="_blank" rel="noopener noreferrer" class="fullBtn">Me contacter</a>
+    </div>
+
+    <div class="bigTxt tag">
+        <h3>Alors, prêt·e à troquer votre ancien coiffeur contre ce petit coin de paradis capillaire ? <br>Vos cheveux/barbe et votre bien-être vous remercieront !</h3>
+        <p>P.S. : Si vous cherchez un salon classique où on parle météo en regardant le plafond, ce n'est probablement pas ici. <br>Mais si vous voulez un endroit où chaque visite est une petite aventure, alors bienvenue à la maison !</p>
+    </div>
+
+    <div class="footer">
+        <div class="logo">
+            <img src="images/ausalon_logo_light.svg" onclick="window.location.href='index.html';" alt="">
+        </div>
+
+        <div class="adresse">
+            <a href="https://maps.app.goo.gl/W1Afrk7mM8Je9st39" target="_blank" rel="noopener noreferrer">
+                <h2>84 avenue de la folie-méricourt, <br>75011 Paris</h2>
+            </a>
+        </div>
+
+        <div class="liens">
+            <a href="https://wa.me/33665343773" target="_blank" rel="noopener noreferrer">Whatsapp</a>
+            <a href="https://www.instagram.com/ausalon.barbier/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+        <div class="arrowContainer">
+            <img src="images/arrow-up.svg" onclick="topFunction()" alt="">
+        </div>
     </div>
 </body>
 

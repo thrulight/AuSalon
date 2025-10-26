@@ -25,15 +25,28 @@
         </video>
 
         <h1>Bienvenue au Salon !</h1>
-        <h3>Lorem ipsum dolor sit amet consectitur</h3>
+
+        <p>
+            Salut les têtes bien faites (et bientôt bien coiffées) !
+            <br><br>
+            <strong>Plus qu'un salon, un véritable lieu de vie.</strong>
+            <br>Ici, on ne fait pas que couper les cheveux (même si on le fait très bien, promis).
+        </p>
 
         <div class="buttonContainer">
-            <a href="https://booksy.com/fr-fr/46412_au-salon-coiffeur-barbier_barbier_99219_paris" target="_blank" rel="noopener noreferrer" class="fullBtn">Prendre rendez-vous</a>
-            <a href="contact.html" class="outlineBtn">Me contacter</a>
+            <!-- Intégration du widget Booksy -->
+            <div class="fullBtn">
+                <script type="text/javascript" src="https://booksy.com/widget/code.js?id=46412&country=fr&lang=fr"></script>
+                Prendre-rendez-vous
+            </div>
+                <a href="contact.html" class="outlineBtn">Me contacter</a>
         </div>
+
     </div>
 
     <div class="menuContainer">
+        <img src="images/safeSpace.png" id="safeSpace" alt="">
+
         <div class="row">
             <div class="column left prestations" onclick="window.location.href='prestations.html'">
                 <h3>Les prestations</h3>

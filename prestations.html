@@ -13,12 +13,12 @@
     <script type="text/javascript" src="script.js"></script>
 
     <title>Au Salon - Les prestations</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="images/favicon_red.svg">
 </head>
 
 <body>
 
-    <div class="topContainer">
+    <div class="topContainer" id="topPage">
             <div class="backBtn" onclick="window.location.href='index.html'">
             <img src="images/long-arrow_red.svg" alt="">
             <p>Retour au menu</p>
@@ -50,7 +50,11 @@
     <div class="priceContainer tag">
         <div class="titleContainer">
             <h1>Prix</h1>
-            <a href="https://booksy.com/fr-fr/46412_au-salon-coiffeur-barbier_barbier_99219_paris" target="_blank" rel="noopener noreferrer" class="fullBtn">Prendre rendez-vous</a>
+            <!-- Intégration du widget Booksy -->
+            <div class="fullBtn">
+                <script type="text/javascript" src="https://booksy.com/widget/code.js?id=46412&country=fr&lang=fr"></script>
+                Prendre-rendez-vous
+            </div>
         </div>
 
         <details name="my-accordion" class="cheveux">
@@ -320,6 +324,27 @@
         <h1>Massage assis</h1>
         <p>Tu souhaites prendre rendez-vous pour un massage assis ?</p>
         <a href="https://calendly.com/durujulien/30min" target="_blank" rel="noopener noreferrer" class="fullBtn">Prendre rendez-vous</a>
+    </div>
+
+    <div class="footer">
+        <div class="logo">
+            <img src="images/ausalon_logo_light.svg" onclick="window.location.href='index.html';" alt="">
+        </div>
+
+        <div class="adresse">
+            <a href="https://maps.app.goo.gl/W1Afrk7mM8Je9st39" target="_blank" rel="noopener noreferrer">
+                <h2>84 avenue de la folie-méricourt, <br>75011 Paris</h2>
+            </a>
+        </div>
+
+        <div class="liens">
+            <a href="https://wa.me/33665343773" target="_blank" rel="noopener noreferrer">Whatsapp</a>
+            <a href="https://www.instagram.com/ausalon.barbier/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+        <div class="arrowContainer">
+            <img src="images/arrow-up.svg" onclick="topFunction()" alt="">
+        </div>
     </div>
 
 </body>

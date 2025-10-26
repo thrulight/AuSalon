@@ -1,7 +1,7 @@
 body {
     background-color: var(--yellow);
     color: #ffffff;
-    margin: 150px 100px;
+    margin: 0;
 }
 
 .backBtn img {
@@ -15,6 +15,10 @@ h1 {
     letter-spacing: -1px;
     font-weight: 500;
     margin-bottom: 1.25rem;
+}
+
+.mainContainer {
+    margin: 150px 100px;
 }
 
 .elfsight-app-a365f1da-d40c-46d0-8baa-2795e6c0d3ad a {

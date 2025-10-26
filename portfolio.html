@@ -9,22 +9,47 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/variables.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
     <title>Au Salon - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="images/favicon_yellow.svg">
 </head>
 
 <body>
-    <div class="backBtn" onclick="window.location.href='index.html'">
-        <img src="images/long-arrow.svg" alt="">
-        <p>Retour au menu</p>
-    </div>
+     <div class="mainContainer" id="topPage">
+        <div class="backBtn" onclick="window.location.href='index.html'">
+            <img src="images/long-arrow.svg" alt="">
+            <p>Retour au menu</p>
+        </div>
+        <h1>Portfolio</h1>
 
-    <h1>Portfolio</h1>
-
-    <div class="feedContainer">
+        <div class="feedContainer">
         <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
         <script src="https://elfsightcdn.com/platform.js" async></script>
         <div class="elfsight-app-a365f1da-d40c-46d0-8baa-2795e6c0d3ad" data-elfsight-app-lazy></div>
+    </div>
+     </div>
+
+    <div class="footer">
+        <div class="logo">
+            <img src="images/ausalon_logo_light.svg" onclick="window.location.href='index.html';" alt="">
+        </div>
+
+        <div class="adresse">
+            <a href="https://maps.app.goo.gl/W1Afrk7mM8Je9st39" target="_blank" rel="noopener noreferrer">
+                <h2>84 avenue de la folie-méricourt, <br>75011 Paris</h2>
+            </a>
+        </div>
+
+        <div class="liens">
+            <a href="https://wa.me/33665343773" target="_blank" rel="noopener noreferrer">Whatsapp</a>
+            <a href="https://www.instagram.com/ausalon.barbier/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+        <div class="arrowContainer">
+            <img src="images/arrow-up.svg" onclick="topFunction()" alt="">
+        </div>
     </div>
 
 </body>

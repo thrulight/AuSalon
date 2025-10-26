@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fr-fr>
+<html lang="fr-fr">
 
 <head>
     <link rel="icon" href="">
@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="css/produits.css">
     <link rel="stylesheet" href="css/variables.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
     <title>Au Salon - Les produits</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.svg">
 </head>
 
 <body>
-    <div class="topContainer">
+    <div class="topContainer" id="topPage">
         <div class="backBtn" onclick="window.location.href='index.html'">
             <img src="images/long-arrow.svg" alt="">
             <p>Retour au menu</p>
@@ -64,6 +67,27 @@
             <div class="txtContainer">
                 <p>Lorem ipsum dolor sit amet consectitur</p>
             </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo">
+            <img src="images/ausalon_logo_light.svg" onclick="window.location.href='index.html';" alt="">
+        </div>
+
+        <div class="adresse">
+            <a href="https://maps.app.goo.gl/W1Afrk7mM8Je9st39" target="_blank" rel="noopener noreferrer">
+                <h2>84 avenue de la folie-méricourt, <br>75011 Paris</h2>
+            </a>
+        </div>
+
+        <div class="liens">
+            <a href="https://wa.me/33665343773" target="_blank" rel="noopener noreferrer">Whatsapp</a>
+            <a href="https://www.instagram.com/ausalon.barbier/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+        <div class="arrowContainer">
+            <img src="images/arrow-up.svg" onclick="topFunction()" alt="">
         </div>
     </div>
 

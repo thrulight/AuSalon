@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    background-color: var(--beige);
+}
+
+.topContainer {
+    padding: 32px;
+    color: var(--blue);
+}
+
+.introContainer {
+    padding: 150px 150px 50px 150px;
+}
+
+.introContainer h1 {
+    margin: 0;
+    font-family:'Titan One', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--blue);
+    text-decoration: underline solid 14px;
+}
+
+/* Story container */
+.storyContainer {
+    padding: 50px 150px 150px 150px;
+}
+
+.storyContainer .background {
+    position: relative;
+    width: 100%;
+}

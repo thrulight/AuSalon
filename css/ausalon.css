@@ -192,6 +192,10 @@ details {
    padding-left: 32px;
 }
 
+.barbierContainer .fullBtn {
+  width: fit-content !important;
+}
+
 .barbierContainer {color: var(--dkGreen);}
 
 /* Chair container */
@@ -251,4 +255,22 @@ color: var(--beige);
 
 .attenteContainer img, .barbierContainer img, .venteContainer img {
    max-width: 90%;
+}
+
+/* Big text */
+.bigTxt {
+   background-color: var(--green);
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 100px 150px;
+   align-items: center;
+   color: var(--beige);
+}
+
+.bigTxt h3 {
+   max-width: 900px;
+   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+   font-size: 1.75rem;
+   font-weight: 500;
 }

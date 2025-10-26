@@ -94,3 +94,17 @@ h1 {
     text-align: center;
     margin-bottom: 2rem;
 }
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+
+.introContainer, .mapContainer, .privateContainer {
+    padding: 3rem 2rem;
+}
+
+.introContainer h1, .mapContainer h1, .privateContainer h1 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+}

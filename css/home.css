@@ -245,11 +245,25 @@ body {
     text-align: center;
 }
 
+.mainContainer {
+    padding: 2rem;
+}
+
+.mainContainer .buttonContainer {
+    flex-direction: column;
+}
+
+.mainContainer .buttonContainer .outlineBtn {
+    width: fit-content;
+}
+
+#safeSpace {display: none;}
+
 .products img {
     position: absolute;
     left: 70vw;
 }
-
+/* 
 .menuContainer {display: none;}
-
+*/
 }

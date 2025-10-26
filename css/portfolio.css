@@ -24,3 +24,16 @@ h1 {
 .elfsight-app-a365f1da-d40c-46d0-8baa-2795e6c0d3ad a {
     display: hidden !important;
 }
+
+/* #region mobile version */
+@media screen and (max-width: 900px){
+
+.mainContainer {
+    margin: 3rem 2rem;
+}
+
+.mainContainer h1 {
+    font-size: 3rem;
+}
+
+}

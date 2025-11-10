@@ -215,6 +215,36 @@ details {
 
 /* All */
 
+.encounterContainer summary, .barbierContainer summary, .barbierContainer details, .encounterContainer details {
+   background-color: var(--beige);
+   color: var(--dkGreen) !important;
+}
+
+.encounterContainer details, .barbierContainer details, .attenteContainer details, .venteContainer details {
+   padding: .25rem 0;
+   background-color: none;
+   color: var(--beige);
+   border-radius: 0;
+}
+
+.encounterContainer .marginBottom, .barbierContainer .marginBottom, .attenteContainer .marginBottom, .venteContainer .marginBottom {
+   margin-bottom: 2.5rem;
+}
+
+.encounterContainer details p, .barbierContainer details p, .attenteContainer details p, .venteContainer details p {
+   margin: 0;
+}
+
+.encounterContainer summary, .barbierContainer summary, .attenteContainer summary, .venteContainer summary {
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.encounterContainer details[open] summary, .barbierContainer details[open] summary, .attenteContainer details[open] summary, .venteContainer details[open] summary {
+    border-bottom: none;
+    margin-bottom: 1rem;
+}
+
 .attenteContainer .right, .venteContainer .right {
    display: flex;
    justify-content: center;
@@ -250,7 +280,7 @@ color: var(--beige);
 }
 
 .attenteContainer p, .venteContainer p, .barbierContainer p {
-   margin-bottom: 32px;
+   margin-bottom: 16px;
 }
 
 .attenteContainer img, .barbierContainer img, .venteContainer img {
@@ -288,12 +318,12 @@ color: var(--beige);
    margin-bottom: 0;
 }
 
-.valueContainer {
-    top: -128px;
+details, .encounterContainer, .attenteContainer, .barbierContainer, .venteContainer, .chairContainer, .bigTxt {
+    padding: 2.5rem 1.5rem;
 }
 
-.valueContainer, details, .encounterContainer, .attenteContainer, .barbierContainer, .venteContainer, .chairContainer, .bigTxt {
-    padding: 3rem 2rem;
+.valueContainer {
+    padding: 0 1.5rem 2.5rem 1.5rem;
 }
 
 details img {

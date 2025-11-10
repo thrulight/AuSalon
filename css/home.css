@@ -186,11 +186,14 @@ body {
     align-items: start;
     justify-content: space-between;
     padding: 24px;
+    flex-direction: column;
+    color: var(--beige);
 }
+
+.history:hover {cursor: not-allowed;}
 
 .history h3 {
     margin: 0;
-    color: var(--beige);
     font-family:'Titan One', Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 2rem;

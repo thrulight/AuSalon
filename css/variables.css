@@ -214,4 +214,8 @@ h3 {
 
 .footer .adresse h2 {text-align: center;}
 
+.fullBtn, .outlineBtn, .backBtn {
+  font-size: 1rem;
+}
+
 }

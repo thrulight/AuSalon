@@ -103,6 +103,7 @@ body {
 
 .productContainer h2 {
     font-size: 2rem;
+    text-align: center;
 }
 
 .productContainer img {
@@ -111,6 +112,10 @@ body {
 
 .introContainer {
     padding: 3rem 2rem;
+}
+
+.introContainer img {
+    display: none;
 }
 
 }

@@ -250,7 +250,7 @@ details {
 @media screen and (max-width: 900px){
 
 .topContainer {
-    margin: 2rem;
+    margin: 2.5rem 1.5rem;
 }
 
 .introContainer {
@@ -265,7 +265,7 @@ details {
 
 .txtContainer h1, .priceContainer h1, .reviewsContainer h1, .massageContainer h1 {
     line-height: 1;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .introContainer img {
@@ -286,7 +286,28 @@ details {
 
 /* Price and Massage */
 .priceContainer, .reviewsContainer, .massageContainer {
-    padding: 3rem 2rem;
+    padding: 2.5rem 1.5rem;
+}
+
+.priceContainer p {
+    font-size: 1rem;
+}
+
+.priceContainer .priceElement p {
+    margin: 0;
+}
+
+.priceContainer .sm {
+    margin-bottom: 8px !important;
+}
+
+.priceContainer details h2 {
+    font-size: 1.5rem;
+}
+
+.priceContainer .priceDescription {
+    flex-direction: column;
+    gap: 0;
 }
 
 }

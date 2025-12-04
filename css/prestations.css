@@ -218,6 +218,87 @@ details {
     line-height: 1;
 }
 
+/* Subscription Container */
+.subscriptionContainer {
+    background-color: var(--red);
+    color: var(--beige);
+    padding: 150px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscriptionContainer .titleDiv {
+    border-bottom: 1px solid var(--beige);
+}
+
+.subscriptionContainer h2 {
+    margin: 1rem 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+.subscriptionContainer .row {
+    display: flex;
+    gap: 48px;
+}
+
+.subscriptionContainer .column {
+    width: 100%;
+}
+
+.subscriptionContainer .titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.subscriptionContainer h1 {
+    color: var(--beige);
+    margin: 0;
+}
+
+.subscriptionContainer p {
+    font-size: 1.25rem;
+}
+
+.subscriptionContainer a {
+    color: var(--beige);
+    text-decoration: none;
+}
+
+.subscriptionContainer .priceDescription {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    :hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.subscriptionContainer .sm {
+    font-size: 0.8rem;
+    opacity: .75;
+    align-content: center;
+}
+
+.subscriptionContainer .priceElement {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscriptionContainer .priceElement p {
+    margin: .5rem 0;
+}
+
+.subscriptionContainer ul {
+    padding: 0;
+    list-style: none;
+}
+
 /* Massage container */
 .massageContainer {
     padding: 100px 100px;
@@ -263,7 +344,7 @@ details {
     margin: 0;
 }
 
-.txtContainer h1, .priceContainer h1, .reviewsContainer h1, .massageContainer h1 {
+.txtContainer h1, .priceContainer h1, .reviewsContainer h1, .massageContainer h1, .subscriptionContainer h1 {
     line-height: 1;
     font-size: 3rem;
 }
@@ -285,29 +366,38 @@ details {
 }
 
 /* Price and Massage */
-.priceContainer, .reviewsContainer, .massageContainer {
+.priceContainer, .reviewsContainer, .massageContainer, .subscriptionContainer {
     padding: 2.5rem 1.5rem;
 }
 
-.priceContainer p {
+.priceContainer p, .subscriptionContainer p {
     font-size: 1rem;
 }
 
-.priceContainer .priceElement p {
+.priceContainer .priceElement p, .subscriptionContainer .priceContainer p {
     margin: 0;
 }
 
-.priceContainer .sm {
+.priceContainer .sm, .subscriptionContainer .sm {
     margin-bottom: 8px !important;
 }
 
-.priceContainer details h2 {
+.priceContainer details h2, .subscriptionContainer h2 {
     font-size: 1.5rem;
 }
 
-.priceContainer .priceDescription {
+.priceContainer .priceDescription, .subscriptionContainer .priceContainer {
     flex-direction: column;
     gap: 0;
+}
+
+.subscriptionContainer .row {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.subscriptionContainer img {
+    height: 14px;
 }
 
 }
